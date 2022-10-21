@@ -1,0 +1,12 @@
+.footer-wrapper {
+  height: 47px;
+  width: 100%;
+  border-top: 1px solid var(--grey);
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+ul {
+  display: inline-flex;
+  gap: 20px;
+}
