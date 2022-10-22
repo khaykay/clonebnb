@@ -1,0 +1,23 @@
+.categoryelement-wrapper {
+  height: 400px;
+  width: 300px;
+  background-color: yellow;
+}
+.image {
+  height: 65%;
+  background-color: antiquewhite;
+  border-radius: 17px;
+}
+.caption {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.capitalize {
+  text-transform: capitalize;
+}
