@@ -1,0 +1,33 @@
+.category {
+    display: flex;
+    padding: 0 40px;
+    min-height: 100px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70px;
+    justify-content: space-between;
+  }
+  
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: .5;
+  }
+  
+  .category-item  .material-icons {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  .category-item:hover {
+    opacity: 1;
+    border-bottom: 3px solid var(--grey);
+    transition: .8s;
+    cursor: pointer;
+  }
+  .active-category {
+    opacity: 1;
+    border-bottom: 3px solid var(--black);
+    transition: .8s;
+  }
