@@ -13,9 +13,15 @@ function Categoryelement() {
             <span className="location bold capitalize">lagos, nigeria</span>
             <span className="host capitalize"> {`Hosted by ${name}`}</span>
             <span className="date capitalize">november</span>
-            <span className="price"> {`${price} night`}</span>
+            <span className="price">
+              <span className="bold">{price}</span>
+              {` night`}
+            </span>
           </div>
-          <div className="right">hello</div>
+          <div className="right">
+            <span className="star"></span>
+            <span className="rating"></span>
+          </div>
         </div>
       </div>
     </div>

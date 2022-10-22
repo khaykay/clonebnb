@@ -1,7 +1,6 @@
 .categoryelement-wrapper {
   height: 400px;
   width: 300px;
-  background-color: yellow;
 }
 .image {
   height: 65%;
@@ -11,12 +10,20 @@
 .caption {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 13px;
 }
 .left {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+.host,
+.date {
+  color: var(--textgrey);
+  font-weight: 360;
+}
+.price {
+  margin-top: 5px;
 }
 .capitalize {
   text-transform: capitalize;
