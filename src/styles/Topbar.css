@@ -60,14 +60,14 @@
   /* background-color: aquamarine; */
 }
 .profile {
-  width: 69px;
+  width: 74px;
   height: 42px;
   border-radius: 25px;
   border: 0.5px solid var(--grey);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-right: 14px;
+  margin-right: 25px;
 }
 .menu-icon {
   width: 15px;
