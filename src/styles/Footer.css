@@ -1,12 +1,40 @@
 .footer-wrapper {
   height: 47px;
+  max-width: 100%;
   width: 100%;
   border-top: 1px solid var(--grey);
   position: fixed;
   bottom: 0;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 ul {
   display: inline-flex;
   gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  text-transform: capitalize;
+}
+/* .right-foot {
+  position: inherit;
+  right: 0;
+  margin-right: 53px;
+} */
+.english {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.region,
+.support,
+.dollar,
+.copywrite {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
