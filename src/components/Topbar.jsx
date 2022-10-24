@@ -1,5 +1,4 @@
 import React from "react";
-// import Card from "./Card";
 import airbnblogo from "../asset/Airbnb-Logo.wine.svg";
 import searchicon from "../asset/icons8-search-30.png";
 import worldicon from "../asset/icons8-world-20.png";
@@ -21,10 +20,27 @@ function Topbar() {
             <div className="search-span bold">Any week</div>
             <div className="search-span">Add guests</div>
             <img src={searchicon} alt="search icon" />
+
+            <div className="search-smallscreen">
+              <div className="ss-left">
+              <div className="ss-search"><i className="material-icons">search</i></div>
+              <div className="ss-locate">
+              <div className="ss-locate-top bold">Where to?</div>
+              <div className="ss-locate-bottom">
+                <ul>
+                  <li>Anywhere</li>
+                  <li>Any week</li>
+                  <li>Add guests</li>
+                </ul>
+              </div>
+              </div>
+              </div>
+              <div className="ss-filter"><i className="material-icons">tune</i></div>
+            </div>
           </div>
           <div className="profile-div">
-            <span className="bold">Become a Host</span>
-            <span>
+            <span className="bold bhost">Become a Host</span>
+            <span className="world">
               <img src={worldicon} alt="world icon" />
             </span>
             <div className="profile">
