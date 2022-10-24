@@ -1,11 +1,26 @@
+.category-cover {
+  position: sticky;
+  top: 59px;
+  background: var(--white);
+  z-index: 2;
+  margin: 0 70px;
+}
+
 .category {
     display: flex;
-    padding: 0 40px;
+    /* padding: 0 40px; */
     min-height: 100px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 70px;
     justify-content: space-between;
+    overflow: auto;
+    transition: .6s;
+    scroll-behavior: smooth;
+    margin: 0 170px 0 0;
+    background-color: var(--white);
+    -ms-overflow-style: none;  
+  scrollbar-width: none;
+  }
+  .category::-webkit-scrollbar{
+    display: none;
   }
   
   .category-item {
@@ -15,8 +30,48 @@
     align-items: center;
     opacity: .5;
   }
+
+  .left-chevron, .right-chevron {
+    border-radius: 50%;
+    border: 1px solid var(--grey);
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    display: none;
+  }
+
+  .filter{
+    border-radius: 10px;
+    height: 50px;
+    border: 1px solid var(--grey);
+    width: 100px;
+    position: absolute;
+    right: 5px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 13px;
+    
+
+  }
+  .left-chevron {
+    position: absolute;
+    left: -37px;
+    bottom: 35px;
+    transform: rotate(190deg);
+  }
+  .right-chevron {
+    position: absolute;
+    right: 120px;
+    bottom: 35px;
+  }
   
-  .category-item  .material-icons {
+  .category-item  .fa-icon {
     padding: 10px 0;
     font-size: 22px;
   }
@@ -26,7 +81,30 @@
     transition: .8s;
     cursor: pointer;
   }
-  .active-category {
+ 
+
+  @media screen and (max-width:1240px){
+    .category-item {
+        min-width: 120px;
+    }
+    .left-chevron, .right-chevron {
+        display: block;
+    }
+    
+   }
+   
+   @media screen and (max-width:800px){
+    .category-cover{
+      margin: 0;
+    }
+    .filter, .right-chevron, .left-chevron {
+      display: none;
+    }
+    .category {
+      margin: 0;
+    }
+   }
+   .active-category {
     opacity: 1;
     border-bottom: 3px solid var(--black);
     transition: .8s;
