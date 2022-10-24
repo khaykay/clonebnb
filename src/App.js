@@ -1,12 +1,8 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Categoryelement from "./components/Categoryelement";
+import Layout from "./components/Layout";
 function App() {
   return (
     <>
-      <Navbar></Navbar>
-      <Categoryelement></Categoryelement>
-      <Footer></Footer>
+      <Layout/>
     </>
   );
 }
