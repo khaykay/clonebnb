@@ -12,7 +12,6 @@ body {
   box-sizing: border-box;
   font-weight: 300;
   font-size: 15px;
-  height: 2000px;
 }
 
 code {
@@ -24,4 +23,5 @@ code {
   --textgrey: #717171;
   --grey: #dddddd;
   --black: #000000;
+  --white: #ffffff;
 }
