@@ -2,7 +2,7 @@ import React , { useState } from "react";
 import Categorybar from "./Categorybar";
 import Topbar from "./Topbar";
 import Footer from "./Footer";
-import CategoryElement from "./CategoryElement";
+import CategoryElement from "./Categoryelement";
 import { categories } from "../db/categories";
 import Card from "./Card";
 
