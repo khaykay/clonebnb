@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+This is a clone of airbnb home page. find demo at https://klonebnb.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
